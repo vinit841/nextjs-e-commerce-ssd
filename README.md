@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# e-commerce-ssd
 
-## Getting Started
+Proyecto de tienda en línea desarrollado con Next.js.
 
-First, run the development server:
+## Tabla de Contenidos
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- [Descripción](#descripción)
+- [Tecnologías](#tecnologías)
+- [Instalación](#instalación)
+- [Estructura-del-Proyecto](#estructura-del-proyecto)
+- [Comandos-Útiles](#comandos-útiles)
+- [Contribuir](#contribuir)
+- [Licencia](#licencia)
+
+
+## Descripción
+
+e-commerce-ssd es una aplicación web para la venta de productos, con funcionalidades de catálogo, carrito de compras y gestión de usuarios.
+
+## Tecnologías
+
+- [Next.js](https://nextjs.org/)
+- [React](https://react.dev/)
+- [Node.js](https://nodejs.org/) o [Bun](https://bun.sh/)
+- [Tailwind CSS](https://tailwindcss.com/)
+
+## Instalación
+
+1. Clona el repositorio:
+    ```bash
+    https://github.com/tu-usuario/e-commerce-ssd.git
+    cd e-commerce-ssd
+    ```
+2. Instala dependencias:
+    ```bash
+    bun install
+    ```
+3. Configura variables de entorno en `.env.local`.
+
+4. Inicia el servidor de desarrollo:
+    ```bash
+    bun run dev
+    ```
+
+## Estructura del Proyecto
+
+```
+/(public)         # Rutas y vistas principales
+/components    # Componentes reutilizables
+/lib         # Utilidades y helpers
+/public        # Archivos estáticos
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Comandos Útiles
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `bun run dev`: Inicia el servidor de desarrollo.
+- `bun run build`: Compila la aplicación para producción.
+- `bun run start`: Inicia la aplicación en modo producción.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Contribuir
 
-## Learn More
+1. Haz un fork del repositorio.
+2. Crea una rama (`git checkout -b feature/nueva-funcionalidad`).
+3. Realiza tus cambios y haz commit.
+4. Envía un pull request.
 
-To learn more about Next.js, take a look at the following resources:
+## Licencia
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Este proyecto está bajo la licencia MIT.
