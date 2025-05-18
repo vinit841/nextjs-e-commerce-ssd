@@ -1,4 +1,4 @@
-import { TopMenu, Sidebar } from "../components";
+import { TopMenu, Sidebar, Footer } from "../components";
 
 interface Props {
   children: React.ReactNode;
@@ -6,12 +6,15 @@ interface Props {
 
 export default function PublicLayout({ children }: Props) {
   return (
-    <main className="min-h-screen  bg-gray-50">
-      <TopMenu />
-      <Sidebar />
-      <div className=" w-full px-2 py-4 sm:px-8 md:px-16 lg:px-32 xl:px-64">
-        {children}
-      </div>
-    </main>
+    <>
+      <main className="min-h-screen  bg-gray-50">
+        <TopMenu />
+        <Sidebar />
+        <div className=" w-full px-2 py-4 sm:px-8 md:px-16 lg:px-32 xl:px-64">
+          {children}
+        </div>
+      </main>
+      <Footer />
+    </>
   );
 }
