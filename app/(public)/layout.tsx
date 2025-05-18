@@ -5,12 +5,12 @@ interface Props {
 }
 
 export default function PublicLayout({ children }: Props) {
-    console.log("Layout");
-    
   return (
-    <main className="min-h-screen ">
+    <main className="min-h-screen  bg-gray-50">
       <TopMenu />
-      {children}
+      <div className=" w-full px-2 py-4 sm:px-8 md:px-16 lg:px-32 xl:px-64">
+        {children}
+      </div>
     </main>
   );
 }
