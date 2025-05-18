@@ -27,18 +27,25 @@ e-commerce-ssd es una aplicación web para la venta de productos, con funcionali
 ## Instalación
 
 1. Clona el repositorio:
+````markdown
+
     ```bash
-    https://github.com/tu-usuario/e-commerce-ssd.git
+    git clone https://github.com/Angel-Raa/nextjs-e-commerce-ssd.git
     cd e-commerce-ssd
     ```
+
 2. Instala dependencias:
+
     ```bash
     bun install
     ```
+
 3. Configura variables de entorno en `.env.local`.
 
 4. Inicia el servidor de desarrollo:
+
     ```bash
+```
     bun run dev
     ```
 

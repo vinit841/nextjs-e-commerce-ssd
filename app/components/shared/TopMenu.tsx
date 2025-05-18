@@ -6,7 +6,7 @@ export const TopMenu = () => {
     <nav className="flex px-8 py-4 justify-between items-center w-full bg-white border-b border-gray-200">
       {/* Logo */}
       <div>
-        <Link href="/">
+        <Link href={'/'}>
           <span className="text-2xl font-semibold tracking-tight text-gray-900 hover:text-gray-700 transition-colors duration-200">
             E-Commerce <span className="text-gray-500">SDD</span>
           </span>
