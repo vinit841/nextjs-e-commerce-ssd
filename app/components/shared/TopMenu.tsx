@@ -1,7 +1,11 @@
+'use client'
+import { useUIStore } from "@/lib/store/ui-store";
 import Link from "next/link";
 import { IoCartOutline, IoSearchOutline } from "react-icons/io5";
 
 export const TopMenu = () => {
+    const toggleSideMenu = useUIStore((state) => state.toggleSideMenu);
+  
   return (
     <nav className="flex px-8 py-4 justify-between items-center w-full bg-white border-b border-gray-200">
       {/* Logo */}
@@ -52,7 +56,9 @@ export const TopMenu = () => {
             2
           </span>
         </Link>
-        <button className="px-4 py-2 rounded-md  hover:bg-gray-200 text-gray-800 font-medium transition-colors duration-200">
+        <button 
+        onClick={toggleSideMenu}
+        className="px-4 py-2 rounded-md  hover:bg-gray-200 text-gray-800 font-medium transition-colors duration-200">
           Menú
         </button>
       </div>
